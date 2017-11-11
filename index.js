@@ -6,7 +6,8 @@ const fs = require('fs');
 const projectId = 'ferrous-osprey-184713';
 
 const bucketName = 'audiofilestemp';
-var filename = '1.flac';
+// File Name to change
+var filename = 'audio_only_1.flac';
 
 // Imports the Google Cloud client library
 const Storage = require('@google-cloud/storage');
@@ -25,12 +26,12 @@ const speechClient = Speech({
 });
 
 // The name of the audio file to transcribe
-const fileName = './resources/3.flac';
+//const fileName = './resources/audio_only_1.flac';
 //const uri = 'gs://${bucketName}/${filename}'
 
 // Reads a local audio file and converts it to base64
-const file = fs.readFileSync(fileName);
-const audioBytes = file.toString('base64');
+//const file = fs.readFileSync(fileName);
+//const audioBytes = file.toString('base64');
 
 // The audio file's encoding, sample rate in hertz, and BCP-47 language code
 const audio = {
