@@ -1,1 +1,2 @@
 This app takes video files as input, rips the audio, uses google cloud speech to text converter to convert the audio into text.
+The audio files are stored in Google bucket temporarily to handle large files.
